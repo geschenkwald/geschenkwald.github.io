@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/pkm/computer-science/conda-commands/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/pkm/computer-science/conda-commands/"}
 ---
 
 
