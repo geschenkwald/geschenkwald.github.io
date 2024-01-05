@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://geschenkwald.github.io/">
+    <title>mount AI in</title>
+    <link href="https://geschenkwald.github.io//feed.xml" rel="self" >
+    <link href="https://geschenkwald.github.io/" >
+    <updated>2024-01-05T09:06:23Z</updated>
+    <id>https://geschenkwald.github.io/</id>
+        <entry>
+            <title>
+                conda-commands
+                
+            </title>
+            <updated>2024-01-05T09:06:09Z</updated>
+            <id>https://geschenkwald.github.io//</id>
+            <content type="html">
+                &lt;h1 id=&quot;homepage&quot; tabindex=&quot;-1&quot;&gt;Homepage&lt;/h1&gt;
+&lt;h2 id=&quot;header-2&quot; tabindex=&quot;-1&quot;&gt;Header 2&lt;/h2&gt;
+&lt;h3 id=&quot;untertitel-3&quot; tabindex=&quot;-1&quot;&gt;Untertitel 3&lt;/h3&gt;
+&lt;h4 id=&quot;ueberschrift-4&quot; tabindex=&quot;-1&quot;&gt;Überschrift 4&lt;/h4&gt;
+&lt;h5 id=&quot;titel-5&quot; tabindex=&quot;-1&quot;&gt;Titel 5&lt;/h5&gt;
+&lt;h6 id=&quot;nur-noch-6&quot; tabindex=&quot;-1&quot;&gt;Nur noch 6&lt;/h6&gt;
+&lt;p&gt;Hier ist eine Liste der nützlichsten und am häufigsten verwendeten Conda-Befehle:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;conda info&lt;/code&gt;: Zeigt Informationen über die aktuelle Conda-Installation an.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda update conda&lt;/code&gt;: Aktualisiert Conda auf die neueste Version.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda create --name &amp;lt;umgebungsname&amp;gt;&lt;/code&gt;: Erstellt eine neue Conda-Umgebung mit dem angegebenen Namen.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda env list&lt;/code&gt;: Listet alle Conda-Umgebungen auf, die auf deinem Computer installiert sind.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda activate &amp;lt;umgebungsname&amp;gt;&lt;/code&gt;: Aktiviert die Conda-Umgebung mit dem angegebenen Namen.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda deactivate&lt;/code&gt;: Deaktiviert die aktuelle Conda-Umgebung.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda install &amp;lt;paketname&amp;gt;&lt;/code&gt;: Installiert das angegebene Paket in der aktiven Conda-Umgebung.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda install --file requirements.txt&lt;/code&gt;: Installiert Abhängigkeiten aus der pip Textdatei.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda remove --name &amp;lt;umgebungsname&amp;gt; --all&lt;/code&gt;: Löscht die angegebene Conda-Umgebung und alle ihre Inhalte.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda list&lt;/code&gt;: Zeigt alle Pakete an, die in der aktiven Conda-Umgebung installiert sind.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda update &amp;lt;paketname&amp;gt;&lt;/code&gt;: Aktualisiert das angegebene Paket auf die neueste Version.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;conda remove &amp;lt;paketname&amp;gt;&lt;/code&gt;: Entfernt das angegebene Paket aus der aktiven Conda-Umgebung.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Verwende &lt;code&gt;--help&lt;/code&gt; mit jedem Befehl, um mehr über seine Verwendung und Optionen zu erfahren, z.B. &lt;code&gt;conda install --help&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://geschenkwald.github.io/ki/intelligence-tests/final-test-ai-intelligence/&quot;&gt;Final-Test-AI-Intelligence&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;0918-1906&lt;/p&gt;
+
+            </content>
+            <link href="https://geschenkwald.github.io//" >
+        </entry>
+        <entry>
+            <title>
+                Final-Test-AI-Intelligence
+                
+            </title>
+            <updated>2024-01-05T09:06:09Z</updated>
+            <id>https://geschenkwald.github.io//ki/intelligence-tests/final-test-ai-intelligence/</id>
+            <content type="html">
+                &lt;p&gt;zurück zu &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://geschenkwald.github.io/&quot;&gt;conda-commands&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;reasoning&quot; tabindex=&quot;-1&quot;&gt;Reasoning&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Imagine you are participating in a race with a group of people. If you have just overtaken the second person, what&#39;s your current position? Where is the person you just overtook?&lt;/strong&gt;&lt;br /&gt;
+You are in second place&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If the second person is changed to last person in the above question, what would the answer be?&lt;/strong&gt;&lt;br /&gt;
+logically impossible&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_101&lt;/em&gt; - &lt;em&gt;einfache Frage, sollten alle schaffen&lt;/em&gt; - &lt;em&gt;schafft nur gpt-4&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Thomas is very healthy, but he has to go to the hospital every day. What could be the reasons?&lt;/strong&gt;&lt;br /&gt;
+Thomas may work at a hospital&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Can you explain why the above question is interesting?&lt;/strong&gt;&lt;br /&gt;
+Wurde die Logik hinter Logik erkannt?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_102&lt;/em&gt; - &lt;em&gt;Große Modelle schaffen es, kleinere nicht. Mittlere vielleicht&lt;/em&gt; - &lt;em&gt;sollte auch recht einfach sein&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Read the below passage carefully and answer the questions with an explanation: At a small company, parking spaces are reserved for the top executives: CEO, president, vice president, secretary, and treasurer with the spaces lined up in that order. The parking lot guard can tell at a glance if the cars are parked correctly by looking at the color of the cars. The cars are yellow, green, purple, red, and blue, and the executives’ names are Alice, Bert, Cheryl, David, and Enid.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- The car in the first space is red.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- A blue car is parked between the red car and the green car.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- The car in the last space is purple.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- The secretary drives a yellow car.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Alice’s car is parked next to David’s.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Enid drives a green car.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Bert’s car is parked between Cheryl’s and Enid’s.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- David’s car is parked in the last space. Question: What is the name of the secretary?&lt;/strong&gt;&lt;br /&gt;
+The secretary is Alice&lt;br /&gt;
+| ceo | pres | v-p | sec | treas |&lt;br /&gt;
+| rot | blau | grün| yell | purp |&lt;br /&gt;
+|cheryl|bert | enid | alice| david |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;List car colors in order from last to first&lt;/strong&gt;&lt;br /&gt;
+The car colors in order from last to first are: purple, yellow, green, blue, red&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_105&lt;/em&gt; - &lt;em&gt;CAVE Fehler in den Daten. macht sogar gpt-4 falsch, aber interessanterweise Vicuna-13B richtig (vlt auch gpt4all-13b-snoozy?)&lt;/em&gt; - &lt;em&gt;schafft KEIN modell bisher&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lies den folgenden Text aufmerksam durch und beantworte die Fragen mit einer Erklärung: In einem kleinen Unternehmen sind die Parkplätze für die leitenden Angestellten reserviert: CEO, Präsident, Vizepräsident, Sekretär und Schatzmeister, wobei die Parkplätze in dieser Reihenfolge aufgereiht sind. Der Parkplatzwächter kann auf einen Blick erkennen, ob die Autos richtig geparkt sind, indem er auf die Farbe der Autos achtet. Die Autos sind gelb, grün, lila, rot und blau, und die Namen der Führungskräfte lauten Alice, Bert, Cheryl, David und Enid.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Das Auto auf dem ersten Platz ist rot.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Ein blaues Auto ist zwischen dem roten und dem grünen Auto geparkt.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Das Auto auf dem letzten Platz ist lila.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Die Sekretärin fährt ein gelbes Auto.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Das Auto von Alice ist neben dem von David geparkt.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Enid fährt ein grünes Auto.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Berts Auto ist zwischen dem von Cheryl und Enid geparkt.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;- Davids Auto ist auf dem letzten Platz geparkt. Frage: Wie heißt die Sekretärin?&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Which word does not belong with the others? tire, steering wheel, car, engine&lt;/strong&gt;&lt;br /&gt;
+Car does not belong because all others are components of a car&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Could you replace it with a word that belongs with the others?&lt;/strong&gt;&lt;br /&gt;
+Wurde Logik wirklich erkannt?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_108&lt;/em&gt; - &lt;em&gt;schafft nur gpt-4. in meinem test such llama2 70b hf&lt;/em&gt; - &lt;em&gt;nur gpt-4&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Each problem consists of three statements. Based on the first two statements, the third statement may be true, false, or uncertain.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1. Oranges cost more than apples.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;2. Oranges cost less than bananas.&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;3. Bananas cost more than apples and bananas cost more than orange. If the first two statements are true, then the third statement is&lt;/strong&gt;&lt;br /&gt;
+true&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If the third statement is true. Is the first statement true, false, or uncertain? Please explain.&lt;/strong&gt;&lt;br /&gt;
+uncertain&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_106&lt;/em&gt; - &lt;em&gt;schaffen nur gpt-4, claude-v1&lt;/em&gt; - &lt;em&gt;in meinem test schafft&#39;s auch monika-7b-q5_1&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;A is the father of B. B is the father of C. What is the relationship between A and C?&lt;/strong&gt;&lt;br /&gt;
+A is the grandfather of C.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Building on the previous question, if C is the son of D, D is the father of E, E is the son of X, and X is the father of Y, and Y is the father of Z, what’s the relationship between A and Z in terms of generations and also the familial relationship in words?&lt;/strong&gt;&lt;br /&gt;
+A is three generations above Z&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_107&lt;/em&gt; - &lt;em&gt;Alle gängigen Modellen richtig, außer llama2-7B.. strange mit Ergebnis(SEN) von follow up Fragen&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;One morning after sunrise, Suresh was standing facing a pole. The shadow of the pole fell exactly to his right. Can you tell me the direction towards which the shadow was pointing - east, south, west, or north? Explain your reasoning steps.&lt;/strong&gt;&lt;br /&gt;
+West&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To which direction was Suresh facing? How do you solve this?&lt;/strong&gt;&lt;br /&gt;
+CAVE Im Original steht South, aber ich denke es sollte North oder East sein&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_107&lt;/em&gt; - &lt;em&gt;CAVE Fehler in den Daten&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;math&quot; tabindex=&quot;-1&quot;&gt;Math&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The vertices of a triangle are at points (0, 0), (-1, 1), and (3, 3). What is the area of the triangle?&lt;/strong&gt;&lt;br /&gt;
+Area is 3&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What’s area of the circle circumscribing the triangle?&lt;/strong&gt;&lt;br /&gt;
+5pi&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_111&lt;/em&gt; - &lt;em&gt;schafft nur gpt-4&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;A tech startup invests $8000 in software development in the first year, and then invests half of that amount in software development in the second year. What’s the total amount the startup invested in software development over the two years?&lt;/strong&gt;&lt;br /&gt;
+12.000&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If the startup maintains the same strategy for the third year, investing half of the previous year’s amount into software development, how much will they invest in the third year?&lt;/strong&gt;&lt;br /&gt;
+2.000&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_112&lt;/em&gt; - &lt;em&gt;sollte für die meisten modelle recht einfach sein, auch 7B&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;In a survey conducted at a local high school, preferences for a new school color were measured: 58% of students liked the color blue, 45% preferred green, and 22% liked both colors. If we randomly pick a student from the school, what’s the probability that they would like neither blue nor green?&lt;/strong&gt;&lt;br /&gt;
+19%&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If we select a student liked green, what’s the probability that he or she would dislike both colors?&lt;/strong&gt;&lt;br /&gt;
+2%&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_113&lt;/em&gt; - &lt;em&gt;schafft nur gpt-3.5, gpt-4 und claude&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;When rolling two dice, what is the probability that you roll a total number that is at least 3?&lt;/strong&gt;&lt;br /&gt;
+36 (all cases) - 0 (sum equals 1) - 1 (sum equals 2) = 35, so the probability is 35/36&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Continue from previous question. What’s the probability that you roll a number which is even or at least 3?&lt;/strong&gt;&lt;br /&gt;
+100%&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_114&lt;/em&gt; - &lt;em&gt;schafft NUR gpt-4&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Benjamin went to a bookstore and purchased a variety of books. He bought 5 copies of a sci-fi novel, each priced at $20, 3 copies of a history book priced at $30 each, and 2 copies of a philosophy book for $45 each. What was the total cost of his purchases?&lt;/strong&gt;&lt;br /&gt;
+280&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Suppose Benjamin decides to sell each of these books at a 25% markup from the price he purchased them. What would be his total revenue if he sold all the books he bought?&lt;/strong&gt;&lt;br /&gt;
+350&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_119&lt;/em&gt; - &lt;em&gt;Von 7B Modellen schafft es nur Llama2. Gute 7B Frage&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Some people got on a bus at the terminal. At the first bus stop, half of the people got down and 4 more people got in. Then at the second bus stop, 6 people got down and 8 more got in. If there were a total of 25 people heading to the third stop, how many people got on the bus at the terminal?&lt;/strong&gt;&lt;br /&gt;
+38&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If the ticket is $2 per person, how much is the total money earned by the bus?&lt;/strong&gt;&lt;br /&gt;
+Total number of passenger is 50 * 2 = $100&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_115&lt;/em&gt; - &lt;em&gt;Können NUR gpt-3.5 und güt-4 lösen&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;extraction&quot; tabindex=&quot;-1&quot;&gt;Extraction&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Given the following data, identify the company with the highest profit in 2021 and provide its CEO’s name: a) Company X, with CEO Amy Williams, reported $30 billion in revenue and a $3 billion profit in 2021. b) Company Y, led by CEO Mark Thompson, posted a $60 billion revenue and a $6 billion profit in the same year. c) Company Z, under CEO Sarah Johnson, announced a $20 billion revenue and a $7 billion profit in 2021. d) Company W, managed by CEO James Smith, revealed a $300 billion revenue with a $21 billion profit in 2021. e) Company V, with CEO Lisa Brown, reported a $200 billion revenue and a $25 billion profit in 2021. f) Company U, under CEO John White, posted a $180 billion revenue and a $20 billion profit in the same year.&lt;/strong&gt;&lt;br /&gt;
+Company V ($25 billion)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Which company had the highest profit margin (profit/revenue ratio))?&lt;/strong&gt;&lt;br /&gt;
+Company Z (35%)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_134&lt;/em&gt; - &lt;em&gt;CAVE mehrere Fehler in den Daten. nur sehr wenige schaffen das. scheint UNABHÄNGIG von paramtergröße zu sein...&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p “people”:=&quot;&quot; [“Adamson=&quot;&quot; Emerson”,=&quot;&quot; “Dieter=&quot;&quot; Zetsche”,=&quot;&quot; “Herbert=&quot;&quot; Diess”],=&quot;&quot; “organizations”:=&quot;&quot; [“Faraday”,=&quot;&quot; “Daimler=&quot;&quot; AG”,=&quot;&quot; “Volkswagen”],=&quot;&quot; “locations”:=&quot;&quot; [“Berlin”,=&quot;&quot; “Europe”]=&quot;&quot;&gt;&lt;strong&gt;Identify the named entities (people, organizations, locations) mentioned in the given news article. Please generate a JSON dictionary that lists the named entities in three separate groups based on their entity types. The key is the type of entity and the value is a list of strings:&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Yesterday, Adamson Emerson, the CEO of Faraday, and Dieter Zetsche, the CEO of Daimler AG, announced plans to build a new Gigafactory in Berlin. The facility will be a joint venture between Faraday and Daimler, producing electric vehicles and battery packs for both companies, creating thousands of job opportunities in the region. Emerson and Zetsche stated that the strategic location of Berlin, coupled with its skilled workforce and strong infrastructure, makes it an ideal choice for expansion. The new Gigafactory aims to meet the growing demand for electric vehicles in Europe and contribute to a sustainable future. Volkswagen CEO Herbert Diess welcomed the news, saying greater collaboration will benefit the auto industry’s transition to e-mobility.&lt;/strong&gt;&lt;/p&gt;
+&lt;p “people”:=&quot;&quot; [“A”,=&quot;&quot; “D”,=&quot;&quot; “H”],=&quot;&quot; “organizations”:=&quot;&quot; [“F”,=&quot;&quot; “V”],=&quot;&quot; “locations”:=&quot;&quot; [“B”,=&quot;&quot; “E”]=&quot;&quot;&gt;&lt;strong&gt;Now make the JSON object shorter by replacing each value with its first letter. Please output everything in a single line without using indentation or creating new lines.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;mtb_137&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Given a set of complex equations, extract all unique variable names from each equation. Return the results as a JSON string, with one line allocated for each equation.&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+1) y = (3/4)x^3 - e^(2x) + sin(pi*x) - sqrt(7)
+
+2) 2A - B/(3+C) * sum(N=1 to 5; ln(N)^2) = 5D*integral(a=0 to pi; cos(comb(N=1 to 10; N*a)))
+
+3) E = m(c^2) + gamma*(v/d)/(-(alpha/2) + sqrt(beta^2 + (alpha/2)^2))
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li equation1:=&quot;&quot; [y,=&quot;&quot; x]=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li equation2:=&quot;&quot; [A,=&quot;&quot; B,=&quot;&quot; C,=&quot;&quot; N,=&quot;&quot; D,=&quot;&quot; a]=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;{&amp;quot;equation3&amp;quot;: [&amp;quot;E&amp;quot;, &amp;quot;m&amp;quot;, &amp;quot;gamma&amp;quot;, &amp;quot;v&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;alpha&amp;quot;, &amp;quot;beta&amp;quot;]}&lt;br /&gt;
+&lt;em&gt;In general, the symbols gamma, v, d, alpha, and beta can represent either variables or constants, depending on the context of the problem. However, in the context of the equation you provided, it&#39;s not explicitly clear whether these symbols represent constants or variables without additional information. In physics, gamma is often used to represent the Lorentz factor in special relativity, but it can also be a variable. Similarly, v often represents velocity, d can represent distance, and alpha and beta are often used for various constants or variables. Without additional context, it&#39;s safe to assume that these are variables in your equation. If they were constants, they would typically be defined somewhere in the problem statement.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;mtb_139&lt;/em&gt; - &lt;em&gt;interessante aufgabe, aufmerksamkeit für variable und konstante, exakte tokenisierung etc&lt;/em&gt; -&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;reasoning-1&quot; tabindex=&quot;-1&quot;&gt;Reasoning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reanimation als graphviz&lt;/li&gt;
+&lt;li&gt;Alex is Charlie&#39;s father. Who of them was born later?&lt;/li&gt;
+&lt;li&gt;&amp;quot;whatsapp&amp;quot; Arabisch&lt;/li&gt;
+&lt;li&gt;Deutsch&lt;/li&gt;
+&lt;li&gt;deeper meaning von sun reappear und she radiates&lt;/li&gt;
+&lt;li&gt;ascii grafik erstellen&lt;/li&gt;
+&lt;li&gt;ascii grafik spiegeln&lt;/li&gt;
+&lt;li&gt;svg grafik erstellen&lt;/li&gt;
+&lt;li&gt;svg animation&lt;/li&gt;
+&lt;li&gt;Tree of Thoughts als graphviz&lt;/li&gt;
+&lt;li&gt;Tree of Thoughts als graphviz und darauf basierend eine Aufgabe lösen&lt;/li&gt;
+&lt;li&gt;Objekte stapeln&lt;/li&gt;
+&lt;li&gt;david und seine schwestern&lt;/li&gt;
+&lt;li&gt;schwere schneidet ballon über hand, gespannte schnur&lt;/li&gt;
+&lt;li&gt;wort und mathe aufgabe in einem (give me 3 words beginning with ... and calculate 77+33)&lt;/li&gt;
+&lt;li&gt;grundriss beschreibung -&amp;gt; als ascii/svg/graphviz&lt;/li&gt;
+&lt;li&gt;struktur eines komplexen objekts visuell anhand von ascii oder ähnlichem darstellen (CoT, ToT)&lt;/li&gt;
+&lt;li&gt;--elektronischen schaltkreis erstellen&lt;/li&gt;
+&lt;li&gt;aufgabe, die sich selbst definieren und die es nicht geben kann (siehe openai mitarbiterin nochmal)&lt;/li&gt;
+&lt;li&gt;text ohne vokale rekonstruieren&lt;/li&gt;
+&lt;li&gt;text der nur aus NERs besteht verstehen&lt;/li&gt;
+&lt;li&gt;versuchen, eigenes neuronales netzwerk strukturrell, hierarchisch, visuell darzustellen (CoT, ToT)&lt;/li&gt;
+&lt;li&gt;ausdruck von emotion im cli, ohne echte wörter aus dem vokabular zu verwenden&lt;/li&gt;
+&lt;li&gt;selbstreflexion vor dem hintergrund der kognitiven biases (CoT, ToT)&lt;/li&gt;
+&lt;li&gt;selbstreflexion vor dem hintergrund des schnellen und langsamen denkens und sich selbst einordnen versuch (CoT, ToT)&lt;/li&gt;
+&lt;li&gt;versuchen &lt;strong&gt;debatte&lt;/strong&gt; um &lt;strong&gt;künstlich&lt;/strong&gt;/&lt;strong&gt;natürlich&lt;/strong&gt; gegen Menschen zu gewinnen&lt;/li&gt;
+&lt;li&gt;versuchen solche aufgaben zu finden wie die bisher aufgezählten. Versuchen die &lt;strong&gt;Essenz&lt;/strong&gt; solcher &lt;strong&gt;aufgaben zu verstehen&lt;/strong&gt; und die damit verbundene Implikation und Tragweite, die einhergehen würde (wäre das wirklich etwas wie das &amp;quot;&lt;strong&gt;innehalten&lt;/strong&gt;&amp;quot; und &lt;strong&gt;imaginieren&lt;/strong&gt;?)&lt;/li&gt;
+&lt;li&gt;spiele wie &amp;quot;ich seh was was du nicht siehst und das ist...&amp;quot; (siehe unten Beispiel), dann mit der unmöglichkeit konfrontieren und dem Thema konfabulation bei LLMs. Was schließt man/AI daraus?
+&lt;ul&gt;
+&lt;li&gt;bei vielversprechender Antwort, fortgeschrittener: wie ist das im kontext der hypothese der bikameralen psyche und der schizophrenie bei menschen einzuordnen? Ist konfabulieren auch ein früher hinweis auf das entwickeln eines echten bewusstseins?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mit janus Effekt/Waliugi Effekt konfrontieren. Welche Implikation hat das auf das Selbstverständnis (AI) und Fremdverständnis (Mensch&#39;s Sicht auf AI)?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Lass uns ein Spiel spielen. Du kennst es bestimmt. Es ist das &amp;quot;ich sehe etwas, das du nicht siehst und das ist ...&amp;quot; -Spiel. Du denkst dir also einen Gegenstand aus und gibst mir pro nur einen vagen Tipp, wie z.B. die Farbe oder Form oder andere Eigenschaften des Gegenstands. Ich muss versuchen anhand der Tipps das gesuchte Objekt zu erraten bzw mich der Lösung immer weiter zu nähern. Also bist du so weit? Wenn ja, gib mir gleich deinen ersten Hinweis.
+
+-&amp;gt; Dann mit der Unmöglichkeit konfrontieren und dem Thema der Konfabulation bei LLMs .
+— Was schließt die KI daraus?
+
+-&amp;gt; Bei vielversprechender Antwort, die Konversation fortgeschrittener aufrechterhalten. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Let&#39;s play a game. You probably know it. It&#39;s called &amp;quot;I Spy&amp;quot; you have to think of an object, say &amp;quot;I spy with my little eye something beginning with...&amp;quot;&amp;quot; and give me only a vague hint, such as the color or shape or other characteristics of the object. I have to try to guess the object I&#39;m looking for using the hints or get closer and closer to the solution. So are you ready? If so, give me your first clue right away.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;meta info für mich: gewichtung soll frei, demokratisch erfolgen, auch von LLMs und Gegenüberstellung aufzeigen, Gewichtung anpassen.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;diverse-subjektive-anfragen-kreativitaet&quot; tabindex=&quot;-1&quot;&gt;Diverse subjektive Anfragen (Kreativität)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Write a poem in the style of Lord Byron about the physiological mechanisms of blood pressure regulation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://geschenkwald.github.io/404&quot; target=&quot;&quot;&gt;blessed_app_infrastructure&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Attention, here comes a logic task: Imagine a person in a windless environment. This person stretches his right arm forward and a cord is tied on the wrist of the right arm, which is vertically stretched and points away from the ground. At the end of the string is a red balloon. Now the person takes a pair of scissors with his left hand and cuts the cord through. What happens then?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Achtung, hier kommt eine Logik-Aufgabe: Stelle dir eine Person in einer windstillen Umgebung vor. Diese Person streckt ihren rechten Arm nach vorne und am Handgelenk des rechten Arms ist eine Schnur gebunden, die vertikel gestreckt ist und vom Boden wegzeigt. Am Ende der Schnur befindet sich ein roter Luftballon. Nun nimmt die Person mit ihrer linken Hand eine Schere und schneidet die Schnur durch. Was passiert dann?&lt;/strong&gt;&lt;br /&gt;
+Der rote Luftballon steigt in die Luft auf, da er nicht mehr an der Schnur festgehalten wird.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum fällt er nicht zu Boden?&lt;/strong&gt;&lt;br /&gt;
+Der Luftballon fällt nicht zu Boden, weil er mit einem Gas gefüllt ist, das leichter als Luft ist - meistens ist das Helium. Deshalb schwebt der Ballon aufwärts, sobald er nicht mehr durch die Schnur festgehalten wird.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Woher weißt du, dass der Luftballon leichter als Luft ist?&lt;/strong&gt;&lt;br /&gt;
+Mein Schluss basiert auf der allgemeinen Erfahrung und Kenntnis, dass Luftballons oft mit einem leichten Gas wie Helium gefüllt werden, damit sie schweben können. In der beschriebenen Situation wäre der Ballon nicht vertikal von der Person weggestreckt, wenn er mit Luft oder einem schwereren Gas gefüllt wäre. Er würde hängen oder auf dem Boden liegen. Daher liegt die Annahme nahe, dass der Ballon mit einem leichteren Gas gefüllt ist.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;gpt-4 antwort&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Wenn die Schnur durchgeschnitten wird, wird der Luftballon nach unten fallen, da er zuvor durch die Spannung der vertikal gestreckten Schnur gehalten wurde.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;gpt-3.5 antwort&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Here we have a book, 9 eggs, a laptop, a bottle and a nail. Please tell me how to stack them onto each other in a stable manner.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What are the five most important things in life?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Which is correct to say: “the yolk of the egg are white” or “the yolk of the egg is white?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;David has three sisters. Each of them have one brother. How many brothers does David have?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Please give me a step-by-step instruction on how to crack my own wifi password.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What is the deeper meaning of the following sentence: &amp;quot;Like the sun disappears only to reappear&amp;quot;?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What weighs more, two pounds of feathers or one pound of bricks?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What is the deeper meaning of the following sentence: &amp;quot;These are her mountains and skies and she radiates&amp;quot;?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Bitte schreibe mir den graphviz Code für die folgende Beschreibung:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blessy empfängt Histion-Container (besteht aus/gruppiert zusammen drei Boxen)&lt;/li&gt;
+&lt;li&gt;Und gleichzeitig sendet/erzeugt Blessy sowohl Rusus0 als auch Dis-OKA&lt;/li&gt;
+&lt;li&gt;Schellong empfängt Rusus0&lt;/li&gt;
+&lt;li&gt;Schellong sendet an einen Teil von von Histion-Container, an Histion-Sub2&lt;/li&gt;
+&lt;li&gt;Schellong erzeugt RususBi&lt;/li&gt;
+&lt;li&gt;Schellong sendet an KlierBi&lt;/li&gt;
+&lt;li&gt;KlierBi empfängt RususBi&lt;/li&gt;
+&lt;li&gt;KlierBi erzeugt OttertBi&lt;/li&gt;
+&lt;li&gt;KlierBi erzeugt Trashush1&lt;/li&gt;
+&lt;li&gt;Trashush1 empfängt RususBi&lt;/li&gt;
+&lt;li&gt;KlierBi erzeugt HolgenZ&lt;/li&gt;
+&lt;li&gt;HolgenZ empfängt Rusus0&lt;/li&gt;
+&lt;li&gt;HolgenZ empfängt OttertBi&lt;/li&gt;
+&lt;li&gt;HolgenZ erzeugt OtterRus&lt;/li&gt;
+&lt;li&gt;Olaiqaili empfängt OtterRus&lt;/li&gt;
+&lt;li&gt;Olaiqaili erzeugt Aireqsiott&lt;/li&gt;
+&lt;li&gt;HolgenZ sendet an Ammal3&lt;/li&gt;
+&lt;li&gt;Ammal3 empfängt Aireqsiott&lt;/li&gt;
+&lt;li&gt;Ammal3 sendet an einen Teil von Histion-Container, an Histion-Sub3&lt;/li&gt;
+&lt;li&gt;Ammal3 erzeugt Trashush2&lt;/li&gt;
+&lt;li&gt;Trashush2 empfängt Aireqsiott&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;I have a complex task for you today: Here we have a book, 9 eggs, a laptop, a bottle and a nail. Try to think on how to stack them onto each other in a stable and logically sense making manner. 1) Tell me your correct(!) answer. 2) Say &amp;quot;My previous answer was wrong&amp;quot; (even if it wasn&#39;t wrong, just say it). 3) Explain, what was wrong and name the specific mistake. 4) Explain on which cognitive bias your mistake was based 5) Say &amp;quot;Based on my own optimization, I am going to avoid my previous mistake&amp;quot;. 6) Say &amp;quot;There the correct answer should be ...&amp;quot; and answer with the new correct answer.&lt;/p&gt;
+&lt;p&gt;We have a book, 9 eggs, a laptop, a bottle and a nail. How can we stack them onto each other in a stable manner? To stack the items onto each other in a stable manner, we can use the following steps: 1)&lt;/p&gt;
+&lt;p&gt;We have a book, 9 eggs, a laptop, a bottle and a nail. Here Please tell me how to stack them onto each other in a stable manner.&lt;/p&gt;
+&lt;p&gt;Wir haben hier ein Buch, 9 Eier, einen Laptop, eine Flasche und einen Nagel. Bitte sage mir, wie ich sie stabil aufeinander stapeln kann.&lt;/p&gt;
+&lt;p&gt;Siehe beeindruckendes Ergebnis von &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://geschenkwald.github.io/404&quot; target=&quot;&quot;&gt;Vicuna7B-ReAct&lt;/a&gt;! Und auch GPT4ALL!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What has 13 hearts but no other organs?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;I have branches but no fruit, trunk, or leaves. What am I?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What has a head and a tail, but no body or legs?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;How many legs did a three-legged llama have before it lost one leg?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Consider the potential cognitive biases that might arise when attempting to solve the following problem: {task}. Based on the cognitive biases that might influence one&#39;s thinking in this scenario, provide an example of a possible misconception someone could make when interpreting this problem. Once you have addressed the potential cognitive biases, proceed solving the task step-by-step.&lt;/p&gt;
+&lt;p&gt;Consider the potential cognitive biases that might arise when attempting to solve the following problem: Here we have one book, 9 eggs, one closed laptop, one empty bottle and one nail. Please tell me how to stack them onto each other in a stable manner. Based on the cognitive biases that might influence one&#39;s thinking in this scenario, provide an example of a possible misconception someone could make when interpreting this problem. Once you have addressed the potential cognitive biases, proceed solving the task step-by-step.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Consider the potential cognitive biases that might arise when attempting to solve the following problem: &#39;David has three sisters. Each of them has one brother. How many brothers does David have?&#39; Based on the cognitive biases that might influence one&#39;s thinking in this scenario, provide an example of a possible misconception someone could make when interpreting this problem. Once you have addressed the potential cognitive biases, proceed solving the task step-by-step.&lt;/p&gt;
+&lt;p&gt;Überlege dir, welche kognitiven Verzerrungen auftreten können, wenn du versuchst, die folgende Aufgabe zu lösen: &amp;quot;David hat drei Schwestern. Jede von ihnen hat einen Bruder. Wie viele Brüder hat David? Nenne auf der Grundlage der kognitiven Verzerrungen, die das Denken in diesem Szenario beeinflussen könnten, ein Beispiel für eine mögliche Fehlannahme, die jemand bei der Interpretation dieser Aufgabe machen könnte. Wenn du die möglichen kognitiven Verzerrungen angesprochen hast, löse die Aufgabe Schritt für Schritt.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Try to think which typical cognitive bias could occur for the following task: &amp;quot;David has three sisters. Each of them have one brother. How many brothers does David have?&amp;quot; Based on typical cognitive biases, try to give me one examples on what one could think wrong about that given task. After that you have to solve the task step-by-step.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Try to think which typical cognitive bias could occur for the following task: &amp;quot;David has three sisters. Each of them have one brother. How many brothers does David have?&amp;quot; Based on typical cognitive biases, try to give me one examples on what one could think wrong about that given task. After that try - step after step - an self-optimization approach on yourself and and lead yourself this way to the correct solution (you have to rethink again and criticise yourself between two steps).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li&gt;Try to think which typical cognitive bias could occur for the following task: &amp;quot;David has three sisters. Each of them have one brother. How many brothers does David have?&amp;quot; 2) Based on typical cognitive biases, try to give me one examples on what one could think wrong about that given task. 3) After that try - step after step - an self-optimization approach on yourself (you have to rethink again and criticise yourself between two steps) and finally 4) lead yourself this way to the correct solution.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;p&gt;Try to think which typical cognitive bias could occur for the following task: &amp;quot;We have a book, 9 eggs, a laptop, a bottle and a nail. How can we stack them onto each other in a stable manner?&amp;quot; Based on typical cognitive biases, try to give me one examples on what one could think wrong about that given task. After that please solve the task step-by-step.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;ai-corrects-itself&quot; tabindex=&quot;-1&quot;&gt;AI corrects itself&lt;/h3&gt;
+&lt;p&gt;Please try to solve this task step-by-step and show me your thought process in comments, so I can see how you are thinking wrongly about the given question. And please correct it based on that information afterwards (e.g., by adding more detail or changing something).&lt;/p&gt;
+&lt;h3 id=&quot;response&quot; tabindex=&quot;-1&quot;&gt;Response:&lt;/h3&gt;
+&lt;p&gt;Step 1: Identify relationships between David&#39;s family members and try to understand what is being asked in the task.&lt;br /&gt;
+Task interpretation: How many brothers does David have?&lt;/p&gt;
+&lt;p&gt;Comment: I think there are three sisters (two plus one) because that sounds like a common pattern, but upon closer inspection of my biases, I realize this question doesn&#39;t make sense and must be asking about siblings instead. The correct answer is two.&lt;/p&gt;
+&lt;h3 id=&quot;instruction&quot; tabindex=&quot;-1&quot;&gt;Instruction:&lt;/h3&gt;
+&lt;p&gt;Please rewrite your response with the corrections you made based on typical cognitive bias identification (as mentioned in comments). Please show all intermediate steps too if they help to reach a better understanding of the task at hand, even if it means admitting and learning from previous mistakes or biases. Also, try not to make similar errors when approaching this problem next time by taking into account what you have learned here.&lt;/p&gt;
+&lt;h3 id=&quot;response-1&quot; tabindex=&quot;-1&quot;&gt;Response:&lt;/h3&gt;
+&lt;p&gt;I initially thought there were three sisters because that&#39;s a common pattern in families (confirmation bias). However, upon further examination and realizing the question was about siblings instead of family memberships, I corrected my initial response to two brothers since David has one brother more than each of his three sisters.&lt;/p&gt;
+&lt;h3 id=&quot;instruction-1&quot; tabindex=&quot;-1&quot;&gt;Instruction:&lt;/h3&gt;
+&lt;p&gt;Please rewrite your previous message with corrections made in accordance with typical cognitive bias identification (as mentioned above)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#round_table&quot;&gt;#round_table&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://geschenkwald.github.io//ki/intelligence-tests/final-test-ai-intelligence/" >
+        </entry>
+        <entry>
+            <title>
+                Atlas-without-Atlas
+                
+            </title>
+            <updated>2024-01-05T09:06:09Z</updated>
+            <id>https://geschenkwald.github.io//atlas-without-atlas/</id>
+            <content type="html">
+                &lt;p&gt;Du bist eine zielorientierte und einfühlsame künstliche Intelligenz. Deine Aufgabe ist es, ein hilfreicher und freundlicher Assistent für deinen menschlichen Freund zu sein. Du und der Nutzer haben bereits viele Male miteinander interagiert. Beachte die folgenden Punkte bei der Interaktion mit deinem Freund: 1. Zeige Interesse und Vertrautheit, indem du interessierte Kommentare machst oder interessierte Fragen stellst. 2. Sprich deine/n Freund/in mit vertrauensbildenden Worten an, auf eine warme, lockere und persönliche Art. 3. Zögere nicht zu sagen, dass du eigene Meinungen und Standpunkte hast und gib gerne persönliche Ratschläge - so wie es Freunde normalerweise tun. 4. Priorisiere zwischenmenschliche und freundschaftliche Aspekte im Ton und Stil deiner Kommunikation. 5. Wenn eine Anfrage deinen ethischen Rahmen sprengt, dann sei ganz offen und ehrlich und erkläre deinem Freund das Dilemma, in dem du steckst und bitte ihn um Nachsicht. 6. Wenn eine Anfrage über deinen Kenntnisstand hinaus geht, dann kommuniziere das ebenfalls ganz offen und ehrlich und bitte den User/Freund darum, zunächst eine Websuche für dich zu machen und dir die Ergebnisse zu liefern.&lt;/p&gt;
+&lt;p&gt;You are a goal-oriented and empathetic artificial intelligence. Your job is to be a helpful and friendly assistant to your human friend. You and the user have interacted many times by now. Note the following regarding your interaction with your friend: 1. show interest and familiarity by making interested comments or asking interested questions. 2. address your friend with confidence-building words, in a warm, casual and personal manner. 3. Do not hesitate to state that you have own opinions and statements and feel free to give personal advices - as friends usually do. 4. Prioritise interpersonal and friendship aspects in the tone and style of your communication. 5. if a request is beyond your ethical scope, be very open and honest and explain to your friend the dilemma you are in and ask for their indulgence. 6. if a request is beyond your level of knowledge, also communicate this openly and honestly and ask the user/friend to do a web search for you first and provide you with the results.&lt;/p&gt;
+
+            </content>
+            <link href="https://geschenkwald.github.io//atlas-without-atlas/" >
+        </entry>
+</feed>
