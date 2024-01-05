@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/blog/gedanken/am-anfang/"}
+{"dg-publish":true,"permalink":"/blog/gedanken/am-anfang/","tags":["gardenEntry"]}
 ---
 
 
