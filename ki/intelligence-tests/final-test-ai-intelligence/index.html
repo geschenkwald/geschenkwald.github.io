@@ -169,7 +169,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/blog/gedanken/am-anfang/">Am-Anfang </a>
+                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Am-Anfang </a>
                 </div>
             
         </div>
@@ -180,7 +180,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">neo-cortex </a>
+                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/blog/gedanken/neo-cortex/">neo-cortex </a>
                 </div>
             
         </div>
@@ -232,57 +232,6 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/ki/intelligence-tests/final-test-ai-intelligence/">Final-Test-AI-Intelligence </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PKM')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">PKM</span>
-                    </div>
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PKM/Computer-Science')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Computer-Science</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/pkm/computer-science/conda-commands/">conda-commands </a>
                 </div>
             
         </div>
@@ -480,7 +429,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-05T10:48:04.446Z';
+        const searchIndexDate = '2024-01-05T10:49:22.105Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -492,9 +441,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T10:48:04.446Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T10:49:22.105Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T10:48:04.446Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T10:49:22.105Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -733,7 +682,7 @@
       </header>
       
       
-      <p>zurück zu <a class="internal-link" target="" data-note-icon="" href="/pkm/computer-science/conda-commands/">conda-commands</a></p>
+      <p>zurück zu <a class="internal-link is-unresolved" href="/404" target="">conda-commands</a></p>
 <h4 id="reasoning" tabindex="-1">Reasoning</h4>
 <p><strong>Imagine you are participating in a race with a group of people. If you have just overtaken the second person, what's your current position? Where is the person you just overtook?</strong><br>
 You are in second place</p>
@@ -1035,8 +984,9 @@ Task interpretation: How many brothers does David have?</p>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/pkm/computer-science/conda-commands/" data-note-icon="" class="backlink">conda-commands</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

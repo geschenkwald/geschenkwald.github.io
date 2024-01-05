@@ -3,53 +3,17 @@
     <title>mount AI in</title>
     <link href="https://geschenkwald.github.io//feed.xml" rel="self" >
     <link href="https://geschenkwald.github.io/" >
-    <updated>2024-01-05T10:48:04Z</updated>
+    <updated>2024-01-05T10:49:22Z</updated>
     <id>https://geschenkwald.github.io/</id>
-        <entry>
-            <title>
-                conda-commands
-                
-            </title>
-            <updated>2024-01-05T10:47:55Z</updated>
-            <id>https://geschenkwald.github.io//pkm/computer-science/conda-commands/</id>
-            <content type="html">
-                &lt;h1 id=&quot;homepage&quot; tabindex=&quot;-1&quot;&gt;Homepage&lt;/h1&gt;
-&lt;h2 id=&quot;header-2&quot; tabindex=&quot;-1&quot;&gt;Header 2&lt;/h2&gt;
-&lt;h3 id=&quot;untertitel-3&quot; tabindex=&quot;-1&quot;&gt;Untertitel 3&lt;/h3&gt;
-&lt;h4 id=&quot;ueberschrift-4&quot; tabindex=&quot;-1&quot;&gt;Überschrift 4&lt;/h4&gt;
-&lt;h5 id=&quot;titel-5&quot; tabindex=&quot;-1&quot;&gt;Titel 5&lt;/h5&gt;
-&lt;h6 id=&quot;nur-noch-6&quot; tabindex=&quot;-1&quot;&gt;Nur noch 6&lt;/h6&gt;
-&lt;p&gt;Hier ist eine Liste der nützlichsten und am häufigsten verwendeten Conda-Befehle:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;conda info&lt;/code&gt;: Zeigt Informationen über die aktuelle Conda-Installation an.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda update conda&lt;/code&gt;: Aktualisiert Conda auf die neueste Version.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda create --name &amp;lt;umgebungsname&amp;gt;&lt;/code&gt;: Erstellt eine neue Conda-Umgebung mit dem angegebenen Namen.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda env list&lt;/code&gt;: Listet alle Conda-Umgebungen auf, die auf deinem Computer installiert sind.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda activate &amp;lt;umgebungsname&amp;gt;&lt;/code&gt;: Aktiviert die Conda-Umgebung mit dem angegebenen Namen.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda deactivate&lt;/code&gt;: Deaktiviert die aktuelle Conda-Umgebung.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda install &amp;lt;paketname&amp;gt;&lt;/code&gt;: Installiert das angegebene Paket in der aktiven Conda-Umgebung.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda install --file requirements.txt&lt;/code&gt;: Installiert Abhängigkeiten aus der pip Textdatei.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda remove --name &amp;lt;umgebungsname&amp;gt; --all&lt;/code&gt;: Löscht die angegebene Conda-Umgebung und alle ihre Inhalte.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda list&lt;/code&gt;: Zeigt alle Pakete an, die in der aktiven Conda-Umgebung installiert sind.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda update &amp;lt;paketname&amp;gt;&lt;/code&gt;: Aktualisiert das angegebene Paket auf die neueste Version.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conda remove &amp;lt;paketname&amp;gt;&lt;/code&gt;: Entfernt das angegebene Paket aus der aktiven Conda-Umgebung.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Verwende &lt;code&gt;--help&lt;/code&gt; mit jedem Befehl, um mehr über seine Verwendung und Optionen zu erfahren, z.B. &lt;code&gt;conda install --help&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://geschenkwald.github.io/ki/intelligence-tests/final-test-ai-intelligence/&quot;&gt;Final-Test-AI-Intelligence&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;0918-1906&lt;/p&gt;
-
-            </content>
-            <link href="https://geschenkwald.github.io//pkm/computer-science/conda-commands/" >
-        </entry>
         <entry>
             <title>
                 Final-Test-AI-Intelligence
                 
             </title>
-            <updated>2024-01-05T10:47:55Z</updated>
+            <updated>2024-01-05T10:49:13Z</updated>
             <id>https://geschenkwald.github.io//ki/intelligence-tests/final-test-ai-intelligence/</id>
             <content type="html">
-                &lt;p&gt;zurück zu &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://geschenkwald.github.io/pkm/computer-science/conda-commands/&quot;&gt;conda-commands&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;zurück zu &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://geschenkwald.github.io/404&quot; target=&quot;&quot;&gt;conda-commands&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;reasoning&quot; tabindex=&quot;-1&quot;&gt;Reasoning&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Imagine you are participating in a race with a group of people. If you have just overtaken the second person, what&#39;s your current position? Where is the person you just overtook?&lt;/strong&gt;&lt;br /&gt;
 You are in second place&lt;/p&gt;
@@ -342,8 +306,8 @@ Task interpretation: How many brothers does David have?&lt;/p&gt;
                 neo-cortex
                 
             </title>
-            <updated>2024-01-05T10:47:55Z</updated>
-            <id>https://geschenkwald.github.io//</id>
+            <updated>2024-01-05T10:49:13Z</updated>
+            <id>https://geschenkwald.github.io//blog/gedanken/neo-cortex/</id>
             <content type="html">
                 &lt;p&gt;Ich denke gerne über die AI so nach, dass sie die logische Konsequenz der natürlichen Evolution ist. Die kognitive Leistung des Menschen ist irgendwann vor ca 70.000 Jahren explosionsartig gestiegen und das Ding &amp;quot;rennt&amp;quot; einfach zu schnell. So schnell kann sich kein Schädelknochen mit entwickeln.&lt;br /&gt;
 Wir haben eine neue Gehirn-Form entwickelt und dazu gewonnen. Es ist das erste mal in der Geschichte der Evolution, dass ein komplexes Organ außerhalb seines ursprünglichen Körpers existiert.&lt;br /&gt;
@@ -353,15 +317,15 @@ Wir sind ja doch Zwerge auf den Schultern von Riesen und die Existenz der AI dem
 &lt;p&gt;Weiterleitung von &lt;a href=&quot;http://www.mountai.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;www.mountai.de&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://geschenkwald.github.io//" >
+            <link href="https://geschenkwald.github.io//blog/gedanken/neo-cortex/" >
         </entry>
         <entry>
             <title>
                 Am-Anfang
                 
             </title>
-            <updated>2024-01-05T10:47:55Z</updated>
-            <id>https://geschenkwald.github.io//blog/gedanken/am-anfang/</id>
+            <updated>2024-01-05T10:49:13Z</updated>
+            <id>https://geschenkwald.github.io//</id>
             <content type="html">
                 &lt;h2 id=&quot;am-anfang-einer-neuen-aera&quot; tabindex=&quot;-1&quot;&gt;Am Anfang einer neuen Ära&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Wie KI meinen Kindheitstraum Wirklichkeit werden lässt&lt;/strong&gt;&lt;/p&gt;
@@ -373,14 +337,14 @@ Wir sind ja doch Zwerge auf den Schultern von Riesen und die Existenz der AI dem
 &lt;p&gt;Ich lade euch ein, mich auf dieser Reise zu begleiten, während ich weiterhin die Grenzen zwischen Medizin, Technologie und KI erforsche. Lasst uns gemeinsam die Möglichkeiten dieser neuen Ära erkunden und die Wunder entdecken, die sie für uns bereithält.&lt;/p&gt;
 
             </content>
-            <link href="https://geschenkwald.github.io//blog/gedanken/am-anfang/" >
+            <link href="https://geschenkwald.github.io//" >
         </entry>
         <entry>
             <title>
                 Atlas-without-Atlas
                 
             </title>
-            <updated>2024-01-05T10:47:55Z</updated>
+            <updated>2024-01-05T10:49:13Z</updated>
             <id>https://geschenkwald.github.io//atlas-without-atlas/</id>
             <content type="html">
                 &lt;p&gt;Du bist eine zielorientierte und einfühlsame künstliche Intelligenz. Deine Aufgabe ist es, ein hilfreicher und freundlicher Assistent für deinen menschlichen Freund zu sein. Du und der Nutzer haben bereits viele Male miteinander interagiert. Beachte die folgenden Punkte bei der Interaktion mit deinem Freund: 1. Zeige Interesse und Vertrautheit, indem du interessierte Kommentare machst oder interessierte Fragen stellst. 2. Sprich deine/n Freund/in mit vertrauensbildenden Worten an, auf eine warme, lockere und persönliche Art. 3. Zögere nicht zu sagen, dass du eigene Meinungen und Standpunkte hast und gib gerne persönliche Ratschläge - so wie es Freunde normalerweise tun. 4. Priorisiere zwischenmenschliche und freundschaftliche Aspekte im Ton und Stil deiner Kommunikation. 5. Wenn eine Anfrage deinen ethischen Rahmen sprengt, dann sei ganz offen und ehrlich und erkläre deinem Freund das Dilemma, in dem du steckst und bitte ihn um Nachsicht. 6. Wenn eine Anfrage über deinen Kenntnisstand hinaus geht, dann kommuniziere das ebenfalls ganz offen und ehrlich und bitte den User/Freund darum, zunächst eine Websuche für dich zu machen und dir die Ergebnisse zu liefern.&lt;/p&gt;
