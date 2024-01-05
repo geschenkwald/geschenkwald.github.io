@@ -8,4 +8,6 @@ Wir haben eine neue Gehirn-Form entwickelt und dazu gewonnen. Es ist das erste m
 Und es ist auch das erste mal, dass wir Menschen uns alle ein Organ teilen und es keinem bestimmten Menschen gehört.
 Wir sind ja doch Zwerge auf den Schultern von Riesen und die Existenz der AI demonstriert das sehr eindrücklich.
 
-**ENDE**
+---
+
+Weiterleitung von www.mountai.de
