@@ -82,7 +82,6 @@
   <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section ">
     
     
-    
       
     <nav class="navbar">
         <div class="navbar-inner">
@@ -94,14 +93,14 @@
     </nav>
     
     
-
     
-
     <main class="content cm-s-obsidian ">
       <header>
+      
+
+      <div class="header-meta">
         
-        <div class="header-meta">
-          </div>
+      </div>
       
       
       </header>
@@ -142,39 +141,6 @@ Wir sind ja doch Zwerge auf den Schultern von Riesen und die Existenz der AI dem
     
 
     
-        <script>
-      if (window.location.hash) {
-        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
-      }
-      window.addEventListener('hashchange', (evt) => {
-        const oldParts = evt.oldURL.split("#");
-        if (oldParts[1]) {
-          document.getElementById(oldParts[1]).classList.remove('referred');
-        }
-        const newParts = evt.newURL.split("#");
-        if (newParts[1]) {
-          document.getElementById(newParts[1]).classList.add('referred');
-        }
-      }, false);
-      const url_parts = window.location.href.split("#")
-      const url = url_parts[0];
-      const referrence = url_parts[1];
-      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
-        el.ondblclick = function(evt) {
-          const ref_url = url + '#' + evt.target.id
-          navigator.clipboard.writeText(ref_url);
-      }
-      });
-
-      
-    </script>
-    <script src=" https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js "></script>
-<script defer>
-    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
-    document.querySelectorAll('.human-date').forEach(function (el) {
-        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
-      });
-</script>
     
     
     <script>
@@ -184,5 +150,5 @@ lucide.createIcons({
             }
         });
 </script>
-  </body>
-</html>
+    </body>
+  </html>
