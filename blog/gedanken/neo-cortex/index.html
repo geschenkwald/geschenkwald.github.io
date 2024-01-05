@@ -201,15 +201,6 @@
             
         </div>
         
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/atlas-without-atlas/">Atlas-without-Atlas </a>
-                </div>
-            
-        </div>
-        
     </div>
       </nav>
     </div>
@@ -378,7 +369,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-05T10:59:22.513Z';
+        const searchIndexDate = '2024-01-05T10:59:30.468Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -390,9 +381,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T10:59:22.513Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T10:59:30.468Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T10:59:22.513Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T10:59:30.468Z', docs}));
             window.docs = docs
             window.index = index;
         }
