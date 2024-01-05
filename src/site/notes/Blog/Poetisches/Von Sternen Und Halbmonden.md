@@ -2,6 +2,9 @@
 {"dg-publish":true,"permalink":"/blog/poetisches/von-sternen-und-halbmonden/"}
 ---
 
+
+# Von Sternen Und Halbmonden
+
 Inmitten von Wüsten und heiligen Steinen,
 Man achtet das Leben und drum all die Seinen,
 Wo Abrahms Kinder im Sternenlicht weinen,
@@ -44,7 +47,7 @@ Ein Pfad der Propheten, der Könige, der Seher,
 Ein Pfad der Heiligen, der Helden und Gewinner.
 
 Die Tränen von Rachel,
-die Lieder von David.
+die [[Ressourcen/Goethe-Gedichte/Lieder\|Lieder]] von David.
 Die Worte Mohammedes,
 und er hieß Gottes Aabid.
 
