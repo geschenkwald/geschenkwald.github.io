@@ -197,6 +197,38 @@
     
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Blog/Poetisches')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">Poetisches</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/blog/poetisches/von-sternen-und-halbmonden/">Von Sternen Und Halbmonden </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -369,7 +401,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-05T10:59:30.468Z';
+        const searchIndexDate = '2024-01-05T12:04:13.601Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -381,9 +413,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T10:59:30.468Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T12:04:13.601Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T10:59:30.468Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T12:04:13.601Z', docs}));
             window.docs = docs
             window.index = index;
         }
