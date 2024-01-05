@@ -205,57 +205,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('KI')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">KI</span>
-                    </div>
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('KI/Intelligence-Tests')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Intelligence-Tests</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/ki/intelligence-tests/final-test-ai-intelligence/">Final-Test-AI-Intelligence </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/atlas-without-atlas/">Atlas-without-Atlas </a>
                 </div>
             
@@ -429,7 +378,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-05T10:54:00.973Z';
+        const searchIndexDate = '2024-01-05T10:54:03.252Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -441,9 +390,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T10:54:00.973Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T10:54:03.252Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T10:54:00.973Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T10:54:03.252Z', docs}));
             window.docs = docs
             window.index = index;
         }
