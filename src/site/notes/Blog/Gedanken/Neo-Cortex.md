@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/blog/gedanken/neo-cortex/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/blog/gedanken/neo-cortex/"}
 ---
 
 
