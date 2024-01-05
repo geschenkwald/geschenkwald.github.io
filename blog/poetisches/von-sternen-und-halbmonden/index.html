@@ -401,7 +401,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-05T12:04:13.601Z';
+        const searchIndexDate = '2024-01-05T12:17:33.819Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -413,9 +413,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T12:04:13.601Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-05T12:17:33.819Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T12:04:13.601Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-05T12:17:33.819Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -654,7 +654,8 @@
       </header>
       
       
-      <p>Inmitten von Wüsten und heiligen Steinen,<br>
+      <h1 id="von-sternen-und-halbmonden" tabindex="-1">Von Sternen Und Halbmonden</h1>
+<p>Inmitten von Wüsten und heiligen Steinen,<br>
 Man achtet das Leben und drum all die Seinen,<br>
 Wo Abrahms Kinder im Sternenlicht weinen,<br>
 Zwei Völker, zwei Träume, in Zeiten verwoben.</p>
@@ -689,7 +690,7 @@ Und doch sind sie vereint, im ihrem uralten Pfad.<br>
 Ein Pfad der Propheten, der Könige, der Seher,<br>
 Ein Pfad der Heiligen, der Helden und Gewinner.</p>
 <p>Die Tränen von Rachel,<br>
-die Lieder von David.<br>
+die <a class="internal-link is-unresolved" href="/404" target="">Lieder</a> von David.<br>
 Die Worte Mohammedes,<br>
 und er hieß Gottes Aabid.</p>
 <p>Sie fließen zusammen, wie Flüsse zum Meer,<br>
