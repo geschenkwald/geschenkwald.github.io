@@ -31,3 +31,4 @@ jobs:
         with:
           publish_dir: ./dist
           github_token: ${{ secrets.GH_TOKEN }}
+          cname: cognithink.de
