@@ -3,6 +3,9 @@
 ---
 
 
+## Fantasy Story erklärt Epilepsien
+**KI als Author**
+
 Es war einmal in einer Welt namens Neuronia, wo die Bewohner, die Neuros, auf den Inseln der Gehirnregionen lebten. Neuronia war bekannt für seine beeindruckende Schönheit, geprägt von funkelnden Synapsenbrücken, die die Inseln verbanden. Hier lebte eine besondere Art von Magie – die Magie der Elektrizität, die es den Neuros ermöglichte, miteinander zu kommunizieren und ihre Welt am Laufen zu halten. Doch in Neuronia gab es auch eine dunkle Seite – die Plage der Epilepsien.
 
 Eines Tages, als die Sonne über den Inseln von Neuronia aufging, bemerkten die Neuros, dass etwas nicht stimmte. Die gewohnten elektrischen Signale, die zwischen den Inseln flossen, wurden von mysteriösen Störungen heimgesucht. Diese Störungen waren die Manifestation der Epilepsien, die in verschiedene Formen auftraten, um die Bewohner von Neuronia zu plagen.
