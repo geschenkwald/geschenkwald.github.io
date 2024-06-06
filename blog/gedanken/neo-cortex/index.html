@@ -1,303 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-  <head>
-    <title>neo-cortex</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>neo-cortex</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
-<script>
-    mermaid.initialize({
-        startOnLoad: true,
-    });
-</script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
-<script>
-    // Create callout icons
-    window.addEventListener("load", () => {
-        document.querySelectorAll(".callout").forEach((elem) => {
-            const icon = getComputedStyle(elem).getPropertyValue('--callout-icon');
-            const iconName = icon && icon.trim().replace(/^lucide-/, "");
-
-            if (iconName) {
-                const calloutTitle = elem.querySelector(".callout-title");
-
-                if (calloutTitle) {
-                    const calloutIconContainer = document.createElement("div");
-                    const calloutIcon = document.createElement("i");
-
-                    calloutIconContainer.appendChild(calloutIcon);
-                    calloutIcon.setAttribute("icon-name", iconName);
-                    calloutIconContainer.setAttribute("class", "callout-icon");
-                    calloutTitle.insertBefore(calloutIconContainer, calloutTitle.firstChild);
-                }
-            }
-        });
-
-        lucide.createIcons();
-
-        // Collapse callouts
-        Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((elem) => {
-            elem.querySelector('.callout-title').addEventListener("click", (event) => {
-                if (elem.classList.contains("is-collapsed")) {
-                    elem.classList.remove("is-collapsed");
-                } else {
-                    elem.classList.add("is-collapsed");
-                }
-            });
-        });
-    });
-</script>
-
-
+<script>window.addEventListener("load",()=>{document.querySelectorAll(".callout").forEach(e=>{var t,l,c=getComputedStyle(e).getPropertyValue("--callout-icon"),c=c&&c.trim().replace(/^lucide-/,"");c&&(e=e.querySelector(".callout-title"))&&(t=document.createElement("div"),l=document.createElement("i"),t.appendChild(l),l.setAttribute("icon-name",c),t.setAttribute("class","callout-icon"),e.insertBefore(t,e.firstChild))}),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach(t=>{t.querySelector(".callout-title").addEventListener("click",e=>{t.classList.contains("is-collapsed")?t.classList.remove("is-collapsed"):t.classList.add("is-collapsed")})})})</script>
 <script src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
-
-<script defer src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
-<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" defer></script>
-
+<script defer="defer" src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" defer="defer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
-    <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.8b2845e1.css" rel="stylesheet">
-
-
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.8b2845e1.css" rel="stylesheet">
 <link href="/styles/custom-style.css" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
-
-
-
-
-
 <style></style>
-    
-    
-  </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section ">
-    
-    
-    
-      
-    
-    <div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" 
-            x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" 
-            x-data="{isDesktop: true, showFilesMobile: false}">
-
-        <div x-show.important="!isDesktop" style="display: none;">
-            <nav class="navbar">
-    <div class="navbar-inner">
-        <span style="font-size: 1.5rem; margin-right: 10px;" @click="showFilesMobile=!showFilesMobile"><i  icon-name="menu"></i></span>
-        
-        <a href="/" style="text-decoration: none;">
-            <h1 style="margin: 15px !important;">Yazan&#39;s Blog</h1>
-        </a>
-        
-    </div>
-    
-    
-        <div class="search-button align-icon" onclick="toggleSearch()">
-    <span class="search-icon">
-        <i icon-name="search" ></i>
-    </span>
-    <span class="search-text">
-        <span>Search</span>
-        <span style="font-size: 0.6rem; padding: 2px 2px 0 6px; text-align:center; transform: translateY(4px);" class="search-keys">
-            CTRL + K
-        </span>
-    </span>
+</head>
+<body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Yazan&#39;s Blog</h1>
+</a>
 </div>
-    
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
 </nav>
-        </div>
-        
-        <div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none;" class="fullpage-overlay"></div>
-
-      <nav class="filetree-sidebar"  x-show.important="isDesktop || showFilesMobile" style="display: none;">
-        
-         <a href="/" style="text-decoration: none;">
-               <h1 style="text-align:center;">Yazan&#39;s Blog</h1>
-         </a>
-         
-        
-            <div style="display: flex; justify-content: center;">
-                <div class="search-button align-icon" onclick="toggleSearch()">
-    <span class="search-icon">
-        <i icon-name="search" ></i>
-    </span>
-    <span class="search-text">
-        <span>Search</span>
-        <span style="font-size: 0.6rem; padding: 2px 2px 0 6px; text-align:center; transform: translateY(4px);" class="search-keys">
-            CTRL + K
-        </span>
-    </span>
 </div>
-            </div>
-        
-         <div class="folder" x-data="{isOpen: true}">
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Blog')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Blog</span>
-                    </div>
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Blog/Gedanken')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Gedanken</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Am-Anfang </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/blog/gedanken/neo-cortex/">neo-cortex </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Blog/Poetisches')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Poetisches</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/blog/poetisches/von-sternen-und-halbmonden/">Von Sternen Und Halbmonden </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    </div>
-      </nav>
-    </div>
-
-    
-
-    
-      <div class="search-container" id="globalsearch" onclick="toggleSearch()">
-    <div class="search-box">
-        <input type="search" id="term" placeholder="Start typing...">
-        <div id="search-results"></div>
-        <footer class="search-box-footer">
-            <div class="navigation-hint">
-                <span>Enter to select</span>
-            </div>
-
-            <div class="navigation-hint align-icon">
-                <i  icon-name="arrow-up" aria-hidden="true"></i>
-                <i  icon-name="arrow-down" aria-hidden="true"></i>
-                <span>to navigate</span>
-            </div>
-
-            <div class="navigation-hint">
-                <span>ESC to close</span>
-            </div>
-
-        </footer>
-    </div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Yazan&#39;s Blog</h1>
+</a>
+<div style="display:flex;justify-content:center">
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</div>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Blog')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Blog</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Blog/Gedanken')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Gedanken</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Am-Anfang </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/blog/gedanken/neo-cortex/">neo-cortex </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Blog/Poetisches')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Poetisches</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/blog/poetisches/von-sternen-und-halbmonden/">Von Sternen Und Halbmonden </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="search-container" id="globalsearch" onclick="toggleSearch()">
+<div class="search-box">
+<input type="search" id="term" placeholder="Start typing...">
+<div id="search-results"></div>
+<footer class="search-box-footer">
+<div class="navigation-hint">
+<span>Enter to select</span>
+</div>
+<div class="navigation-hint align-icon">
+<i icon-name="arrow-up" aria-hidden="true"></i>
+<i icon-name="arrow-down" aria-hidden="true"></i>
+<span>to navigate</span>
+</div>
+<div class="navigation-hint">
+<span>ESC to close</span>
+</div>
+</footer>
+</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', init, false);
-    document.addEventListener('DOMContentLoaded', setCorrectShortcut, false);
-
-    window.toggleSearch = function () {
-        if (document.getElementById('globalsearch').classList.contains('active')) {
-            document
-                .getElementById('globalsearch')
-                .classList
-                .remove('active');
-        } else {
-            document
-                .getElementById('globalsearch')
-                .classList
-                .add('active');
-            document
-                .getElementById('term')
-                .focus();
-        }
-    }
-
-    window.toggleTagSearch = function (evt) {
-        console.log(evt.textContent);
-        const term = evt.textContent;
-        if (term) {
-            window
-                .document
-                .getElementById('term')
-                .value = term.trim();
-            window.toggleSearch();
-            window.search();
-        }
-    }
-
-    const loadingSvg = `
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);e=e.textContent;e&&(window.document.getElementById("term").value=e.trim(),window.toggleSearch(),window.search())};const loadingSvg=`
     <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
       <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
           <circle cx="22" cy="22" r="6" stroke-opacity="0">
@@ -338,773 +170,85 @@
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;
-
-    function debounce(func, wait, immediate) {
-        var timeout;
-        return function () {
-            var context = this,
-                args = arguments;
-            var later = function () {
-                timeout = null;
-                if (!immediate) 
-                    func.apply(context, args);
-                };
-            var callNow = immediate && !timeout;
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-            if (callNow) 
-                func.apply(context, args);
-            };
-    };
-
-    function setCorrectShortcut() {
-        if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
-            document
-                .querySelectorAll(".search-keys")
-                .forEach(x => x.innerHTML = "⌘ + K");
-        }
-    }
-
-    function createIndex(posts) {
-        const encoder = (str) => str
-            .toLowerCase()
-            .split(/([^a-z]|[^\x00-\x7F])/)
-        const contentIndex = new FlexSearch.Document({
-            cache: true,
-            charset: "latin:extra",
-            optimize: true,
-            index: [
-                {
-                    field: "content",
-                    tokenize: "reverse",
-                    encode: encoder
-                }, {
-                    field: "title",
-                    tokenize: "forward",
-                    encode: encoder
-                }, {
-                    field: "tags",
-                    tokenize: "forward",
-                    encode: encoder
-                }
-            ]
-        })
-        posts.forEach((p, idx) => {
-            contentIndex.add({
-                id: idx, title: p.title, content: p.content, tags: p.tags //Change to removeHTML
-            })
-        });
-        return contentIndex;
-    }
-
-    async function init() {
-        //init offline search index
-
-        const searchIndexDate = '2024-06-06T17:55:14.474Z';
-        let shouldFetch = true;
-        if(localStorage.getItem("searchIndex")) {
-            let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
-            if(date === searchIndexDate){
-                shouldFetch = false;
-                let index = createIndex(docs);
-                window.docs = docs
-                window.index = index;
-            }        
-        }
-        if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-06-06T17:55:14.474Z')).json();
-            let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-06T17:55:14.474Z', docs}));
-            window.docs = docs
-            window.index = index;
-        }
-
-        //open searchmodal when ctrl + k is pressed, cmd + k on mac
-        document.addEventListener('keydown', (e) => {
-            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-                e.preventDefault();
-                toggleSearch();
-            }
-            if (e.key === 'Escape') {
-                document
-                    .getElementById('globalsearch')
-                    .classList
-                    .remove('active');
-            }
-
-            //navigate search results with arrow keys
-            if (document.getElementById('globalsearch').classList.contains('active')) {
-                if (e.key === 'ArrowDown') {
-                    e.preventDefault();
-                    let active = document.querySelector('.searchresult.active');
-                    if (active) {
-                        active
-                            .classList
-                            .remove('active');
-                        if (active.nextElementSibling) {
-                            active
-                                .nextElementSibling
-                                .classList
-                                .add('active');
-                        } else {
-                            document
-                                .querySelector('.searchresult')
-                                .classList
-                                .add('active');
-                        }
-                    } else {
-                        document
-                            .querySelector('.searchresult')
-                            .classList
-                            .add('active');
-                    }
-
-                    let currentActive = document.querySelector('.searchresult.active');
-                    if (currentActive) {
-                        currentActive.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
-                    }
-                }
-                if (e.key === 'ArrowUp') {
-                    e.preventDefault();
-                    let active = document.querySelector('.searchresult.active');
-                    if (active) {
-                        active
-                            .classList
-                            .remove('active');
-                        if (active.previousElementSibling) {
-                            active
-                                .previousElementSibling
-                                .classList
-                                .add('active');
-                        } else {
-                            document
-                                .querySelectorAll('.searchresult')
-                                .forEach((el) => {
-                                    if (!el.nextElementSibling) {
-                                        el
-                                            .classList
-                                            .add('active');
-                                    }
-                                });
-                        }
-                    } else {
-                        document
-                            .querySelectorAll('.searchresult')
-                            .forEach((el) => {
-                                if (el.nextElementSibling) {
-                                    el
-                                        .classList
-                                        .add('active');
-                                }
-                            });
-                    }
-
-                    let currentActive = document.querySelector('.searchresult.active');
-                    if (currentActive) {
-                        currentActive.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
-                    }
-
-                }
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    let active = document.querySelector('.searchresult.active');
-                    if (active) {
-                        window.location.href = active
-                            .querySelector("a")
-                            .href;
-                    }
-                }
-            }
-        });
-
-        const debouncedSearch = debounce(search, 200, false);
-        field = document.querySelector('#term');
-        field.addEventListener('keydown', (e) => {
-            if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') {
-                debouncedSearch();
-            }
-        });
-        resultsDiv = document.querySelector('#search-results');
-
-        const params = new URL(location.href).searchParams;
-        if (params.get('q')) {
-            field.setAttribute('value', params.get('q'));
-            toggleSearch();
-            search();
-        }
-    }
-    window.lastSearch = '';
-    async function search() {
-        let search = field
-            .value
-            .trim();
-        if (!search) 
-            return;
-        if (search == lastSearch) 
-            return;
-        console.log(`search for ${search}`);
-        window.lastSearch = search;
-
-        resultsDiv.innerHTML = loadingSvg;
-        //let searchRequest = await fetch(`/api/search?term=${encodeURIComponent(search)}`);
-        //let results = await searchRequest.json();
-        let results = offlineSearch(search);
-        let resultsHTML = '';
-        if (!results.length) {
-            let resultParagraph = document.createElement("p");
-            resultParagraph.innerText = `No results for "${search}"`;
-            resultsDiv.innerHTML = '';
-            resultsDiv.appendChild(resultParagraph);
-            return;
-        }
-        resultsHTML += '<div style="max-width:100%;">';
-        // we need to add title, url from ref
-        results.forEach(r => {
-            if(r.tags && r.tags.length > 0){
-                resultsHTML += `<div class="searchresult">
-                    <a class="search-link" href="${r.url}">${r.title}</a>
-                    <div onclick="window.location='${r.url}'">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-06-06T17:59:54.552Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-06-06T17:59:54.552Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-06-06T17:59:54.552Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+                    <a class="search-link" href="${e.url}">${e.title}</a>
+                    <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
                             <div class="header-tags">
-                                ${r.tags.map(tag=>'<a class="tag" href="JavaScript:Void(0);">#'+tag+'</a>').join("")}
+                                ${e.tags.map(e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>").join("")}
                             </div>
                         </div>
-                        ${r.content}
+                        ${e.content}
                     </div>
-                </div>`;
-            } else {
-                resultsHTML += `<div class="searchresult">
-                    <a class="search-link" href="${r.url}">${r.title}</a>
-                    <div onclick="window.location='${r.url}'">
-                        ${r.content}
+                </div>`:t+=`<div class="searchresult">
+                    <a class="search-link" href="${e.url}">${e.title}</a>
+                    <div onclick="window.location='${e.url}'">
+                        ${e.content}
                     </div>
-                </div>`;
-            }
-        });
-        resultsHTML += '</div>';
-        resultsDiv.innerHTML = resultsHTML;
-    }
-
-    function truncate(str, size) {
-        //first, remove HTML
-        str = str.replaceAll(/<[^>]*>/g, '');
-        if (str.length < size) 
-            return str;
-        return str.substring(0, size - 3) + '...';
-    }
-
-    function offlineSearch(searchQuery) {
-        let data = window.docs;
-
-        let isTagSearch = searchQuery[0] === "#" && searchQuery.length > 1;
-
-        let searchResults = isTagSearch
-            ? index.search(searchQuery.substring(1), [
-                {
-                    field: "tags"
-                }
-            ])
-            : index.search(searchQuery, [
-                {
-                    field: "title",
-                    limit: 5
-                }, {
-                    field: "content",
-                    weight: 10
-                }
-            ]);
-
-        const getByField = (field) => {
-            const results = searchResults.filter((x) => x.field === field)
-            if (results.length === 0) {
-                return []
-            } else {
-                return [...results[0].result]
-            }
-        }
-        const allIds = new Set([
-            ...getByField("title"),
-            ...getByField("content"),
-            ...getByField("tags")
-        ])
-        const dataIds = [...allIds];
-        const finalResults = dataIds.map((id) => {
-            let result = data[id];
-            result.content = truncate(result.content, 400);
-            result.tags = result
-                .tags
-                .filter((x) => x != "gardenEntry" && x != "note"); //Note is automatically added by 11ty. GardenEntry is used internally to mark the home page
-
-            return result;
-        })
-        return finalResults;
-
-    }
-</script>
-    
-
-    <main class="content cm-s-obsidian ">
-      <header>
-        
-        <div class="header-meta">
-          </div>
-      
-      
-      </header>
-      
-      
-      <p>Ich denke gerne über die AI so nach, dass sie die logische Konsequenz der natürlichen Evolution ist. Die kognitive Leistung des Menschen ist irgendwann vor ca 70.000 Jahren explosionsartig gestiegen und das Ding &quot;rennt&quot; einfach zu schnell. So schnell kann sich kein Schädelknochen mit entwickeln.<br>
+                </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>Ich denke gerne über die AI so nach, dass sie die logische Konsequenz der natürlichen Evolution ist. Die kognitive Leistung des Menschen ist irgendwann vor ca 70.000 Jahren explosionsartig gestiegen und das Ding &quot;rennt&quot; einfach zu schnell. So schnell kann sich kein Schädelknochen mit entwickeln.<br>
 Wir haben eine neue Gehirn-Form entwickelt und dazu gewonnen. Es ist das erste mal in der Geschichte der Evolution, dass ein komplexes Organ außerhalb seines ursprünglichen Körpers existiert.<br>
 Und es ist auch das erste mal, dass wir Menschen uns alle ein Organ teilen und es keinem bestimmten Menschen gehört.<br>
 Wir sind ja doch Zwerge auf den Schultern von Riesen und die Existenz der AI demonstriert das sehr eindrücklich.</p>
 <hr>
 <p>Weiterleitung von <a href="http://www.mountai.de" target="_blank" class="external-link">www.mountai.de</a></p>
-
-      
-      
-    </main>
-
-    
-      <aside>
-      <div class="sidebar">
-            <div class="sidebar-container">
-                  
-                  
-                        <script>
-    async function fetchGraphData() {
-        const graphData = await fetch('/graph.json').then(res => res.json());
-        const fullGraphData  = filterFullGraphData(graphData);
-        return {graphData, fullGraphData}
-    }
-
-    function getNextLevelNeighbours(existing, remaining) {
-        const keys = Object.values(existing).map((n) => n.neighbors).flat();
-        const n_remaining = Object.keys(remaining).reduce((acc, key) => {
-                if (keys.indexOf(key) != -1) {
-                    if (!remaining[key].hide) {
-                        existing[key] = remaining[key];
-                    }
-                } else {
-                    acc[key] = remaining[key];
-                }
-                return acc;
-            }, {});
-        return existing, n_remaining;
-    }
-
-    function filterLocalGraphData(graphData, depth) {
-        if (graphData == null) {
-            return null;
-        }
-        let remaining = JSON.parse(JSON.stringify(graphData.nodes));
-        let links = JSON.parse(JSON.stringify(graphData.links));
-        let currentLink = decodeURI(window.location.pathname);
-        let currentNode = remaining[currentLink] || Object.values(remaining).find((v) => v.home);
-        delete remaining[currentNode.url];
-        if (!currentNode.home) {
-            let home = Object.values(remaining).find((v) => v.home);
-            delete remaining[home.url];
-        }
-        currentNode.current = true;
-        let existing = {};
-        existing[currentNode.url] = currentNode;
-        for (let i = 0; i < depth; i++) {
-            existing, remaining = getNextLevelNeighbours(existing, remaining);
-        }
-        nodes = Object.values(existing);
-        if (!currentNode.home) {
-            nodes = nodes.filter(n => !n.home);
-        }
-        let ids = nodes.map((n) => n.id);
-        return {
-            nodes,
-            links: links.filter(function (con) {
-                return ids.indexOf(con.target) > -1 && ids.indexOf(con.source) > -1;
-            }),
-        }
-    }
-
-    function getCssVar(variable) {return getComputedStyle(document.body).getPropertyValue(variable)}
-
-    function htmlDecode(input) {
-        var doc = new DOMParser().parseFromString(input, "text/html");
-        return doc.documentElement.textContent;
-    }
-
-    function renderGraph(graphData, id, delay, fullScreen) {
-        if (graphData == null) {
-            return;
-        }
-        const el = document.getElementById(id);
-        width = el.offsetWidth;
-        height = el.offsetHeight;
-        const highlightNodes = new Set();
-        let hoverNode = null;
-        const color = getCssVar("--graph-main");
-        const mutedColor = getCssVar("--graph-muted");
-        let Graph = ForceGraph()
-        (el)
-            .graphData(graphData)
-            .nodeId('id')
-            .nodeLabel('title')
-            .linkSource('source')
-            .linkTarget('target')
-            .d3AlphaDecay(0.10)
-            .width(width)
-            .height(height)
-            .linkDirectionalArrowLength(2)
-            .linkDirectionalArrowRelPos(0.5)
-            .autoPauseRedraw(false)
-            .linkColor((link) => {
-                if (hoverNode == null) {
-                    return color;
-                }
-                if (link.source.id == hoverNode.id || link.target.id == hoverNode.id) {
-                    return color;
-                } else {
-                    return mutedColor;
-                }
-                
-            })
-            .nodeCanvasObject((node, ctx) => {
-                const numberOfNeighbours = (node.neighbors && node.neighbors.length) || 2;
-                const nodeR = Math.min(7, Math.max(numberOfNeighbours / 2, 2));
-                
-                ctx.beginPath();
-                ctx.arc(node.x, node.y, nodeR, 0, 2 * Math.PI, false);
-                if (hoverNode == null) {
-                    ctx.fillStyle = color;
-                } else {
-                    if (node == hoverNode || highlightNodes.has(node.url)) {
-                        ctx.fillStyle = color;
-                    } else {
-                        ctx.fillStyle = mutedColor;
-                    }
-                }
-                 
-                ctx.fill();
-                
-                if (node.current) {
-                    ctx.beginPath();
-                    ctx.arc(node.x, node.y, nodeR + 1, 0, 2 * Math.PI, false);
-                    ctx.lineWidth = 0.5;
-                    ctx.strokeStyle = color;
-                    ctx.stroke();
-                }
-
-                const label = htmlDecode(node.title)
-                const fontSize = 3.5;
-                ctx.font = `${fontSize}px Sans-Serif`;
-
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'top';
-                ctx.fillText(label, node.x, node.y + nodeR + 2);
-            })
-            .onNodeClick(node => {
-                window.location = node.url;
-            })
-            .onNodeHover(node => {
-                highlightNodes.clear();
-                if (node) {
-                highlightNodes.add(node);
-                node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
-                }
-                hoverNode = node || null;
-                
-            });
-            if (fullScreen || (delay != null && graphData.nodes.length > 4)) {
-                setTimeout(() => {
-                    Graph.zoomToFit(5, 75);
-                }, delay || 200);
-            }
-        return Graph;
-    }
-
-    function renderLocalGraph(graphData, depth, fullScreen) {
-        if (window.graph){
-            window.graph._destructor();
-        }
-        const data = filterLocalGraphData(graphData, depth);
-        return renderGraph(data, 'link-graph', null, fullScreen);
-    }
-
-    function filterFullGraphData(graphData) {
-        if (graphData == null) {
-            return null;
-        }
-        graphData = JSON.parse(JSON.stringify(graphData));
-        const hiddens = Object.values(graphData.nodes).filter((n) => n.hide).map((n) => n.id);
-        const data = {
-            links: JSON.parse(JSON.stringify(graphData.links)).filter((l) => hiddens.indexOf(l.source) == -1 && hiddens.indexOf(l.target) == -1),
-            nodes: [...Object.values(graphData.nodes).filter((n) => !n.hide)]
-        }
-        return data
-    }
-
-    function openFullGraph(fullGraphData) {
-        lucide.createIcons({
-                attrs: {
-                    class: ["svg-icon"]
-                }
-            });
-        return renderGraph(fullGraphData, "full-graph-container", 200, false);;
-    }
-
-    function closefullGraph(fullGraph) {
-        if (fullGraph) {
-            fullGraph._destructor();
-        }
-        return null;
-    }
-</script>
-<div  x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
-    <div class="graph-title-container">
-        <div class="graph-title">Connected Pages</div>
-        <div id="graph-controls">
-                <div class="depth-control">
-                    <label for="graph-depth">Depth</label>
-                    <div class="slider">
-                            <input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth">
-                    <datalist id="depthmarkers">
-                            <option value="1" label="1"></option>
-                            <option value="2" label="2"></option>
-                            <option value="3" label="3"></option>
-                    </datalist>
-                    </div>
-                    <span id="depth-display" x-text="depth"></span>
-                </div>
-                <div class="ctrl-right">
-                    <span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i  icon-name="globe" aria-hidden="true"></i></span>
-                    <span  id="graph-fs-btn"  x-on:click="fullScreen = !fullScreen"><i  icon-name="expand" aria-hidden="true"></i></span>
-                </div>
-        </div>
-    </div>
-    <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph" ></div>
-    <div x-show="showFullGraph" id="full-graph" class="show" style="display: none;">
-        <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
-    </div>
+</main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<script>async function fetchGraphData(){var e=await fetch("/graph.json").then(e=>e.json());return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(n,r){const l=Object.values(n).map(e=>e.neighbors).flat();return Object.keys(r).reduce((e,t)=>(-1!=l.indexOf(t)?r[t].hide||(n[t]=r[t]):e[t]=r[t],e),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes));var r,e=JSON.parse(JSON.stringify(e.links)),l=decodeURI(window.location.pathname),l=n[l]||Object.values(n).find(e=>e.home),a=(delete n[l.url],l.home||(r=Object.values(n).find(e=>e.home),delete n[r.url]),l.current=!0,{});a[l.url]=l;for(let e=0;e<t;e++)n=getNextLevelNeighbours(a,n);nodes=Object.values(a);let i=(nodes=l.home?nodes:nodes.filter(e=>!e.home)).map(e=>e.id);return{nodes:nodes,links:e.filter(function(e){return-1<i.indexOf(e.target)&&-1<i.indexOf(e.source)})}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(t,n,r,a){if(null!=t){n=document.getElementById(n);width=n.offsetWidth,height=n.offsetHeight;const i=new Set;let l=null;const o=getCssVar("--graph-main"),u=getCssVar("--graph-muted");let e=ForceGraph()(n).graphData(t).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor(e=>null==l||(e.source.id==l.id||e.target.id==l.id)?o:u).nodeCanvasObject((e,t)=>{var n=e.neighbors&&e.neighbors.length||2,n=Math.min(7,Math.max(n/2,2)),r=(t.beginPath(),t.arc(e.x,e.y,n,0,2*Math.PI,!1),null==l||e==l||i.has(e.url)?t.fillStyle=o:t.fillStyle=u,t.fill(),e.current&&(t.beginPath(),t.arc(e.x,e.y,n+1,0,2*Math.PI,!1),t.lineWidth=.5,t.strokeStyle=o,t.stroke()),htmlDecode(e.title));t.font="3.5px Sans-Serif",t.textAlign="center",t.textBaseline="top",t.fillText(r,e.x,e.y+n+2)}).onNodeClick(e=>{window.location=e.url}).onNodeHover(e=>{i.clear(),e&&(i.add(e),e.neighbors.forEach(e=>i.add(e))),l=e||null});return(a||null!=r&&4<t.nodes.length)&&setTimeout(()=>{e.zoomToFit(5,75)},r||200),e}}function renderLocalGraph(e,t,n){return window.graph&&window.graph._destructor(),renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter(e=>e.hide).map(e=>e.id);return{links:JSON.parse(JSON.stringify(e.links)).filter(e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target)),nodes:[...Object.values(e.nodes).filter(e=>!e.hide)]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
+<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
+<div class="graph-title-container">
+<div class="graph-title">Connected Pages</div>
+<div id="graph-controls">
+<div class="depth-control">
+<label for="graph-depth">Depth</label>
+<div class="slider">
+<input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth">
+<datalist id="depthmarkers">
+<option value="1" label="1"></option>
+<option value="2" label="2"></option>
+<option value="3" label="3"></option>
+</datalist>
 </div>
-                  
-
-                  
-
-                        
-                              
-                              <div class="backlinks">
-                                    <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
-                              </div>
-                        
-                  
-                  
-            </div>
-      </div>
+<span id="depth-display" x-text="depth"></span>
+</div>
+<div class="ctrl-right">
+<span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i icon-name="globe" aria-hidden="true"></i></span>
+<span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i icon-name="expand" aria-hidden="true"></i></span>
+</div>
+</div>
+</div>
+<div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
+<div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
+<span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+<div class="backlinks">
+<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
+</div></div>
+</div>
+</div>
+</div>
 </aside>
-    
-
-    
-      
-<style>
-#tooltip-wrapper {
-  background: var(--background-primary);
-  padding: 1em;
-  border-radius: 4px;
-  overflow: hidden;
-  position: fixed;
-  width: 80%;
-  max-width: 400px;
-  height: auto;
-  max-height: 300px;
-  font-size: 0.8em;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  opacity: 0;
-  transition: opacity 100ms;
-  unicode-bidi: plaintext;
-  overflow-y: scroll;
-  z-index: 10;
-}
-
-#tooltip-wrapper:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-  width: 100%;
-  unicode-bidi: plaintext;
-  height: 75px;
-}
-</style>
-<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
-  <div id='tooltip-content'>
-  </div>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
 </div>
-
-<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
 </iframe>
-
-<script>
-  var opacityTimeout;
-  var contentTimeout;
-  var transitionDurationMs = 100;
-
-  var iframe = document.getElementById('link-preview-iframe')
-  var tooltipWrapper = document.getElementById('tooltip-wrapper')
-  var tooltipContent = document.getElementById('tooltip-content')
-
-  var linkHistories = {};
-
-  function hideTooltip() {
-    opacityTimeout = setTimeout(function () {
-      tooltipWrapper.style.opacity = 0;
-      contentTimeout = setTimeout(function () {
-        tooltipContent.innerHTML = '';
-        tooltipWrapper.style.display = 'none';
-      }, transitionDurationMs + 1);
-    }, transitionDurationMs)
-  }
-
-  function showTooltip(event) {
-    var elem = event.target;
-    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
-    var top = window.pageYOffset || document.documentElement.scrollTop;
-    var url = event.target.getAttribute("href");
-    if (url.indexOf("http") === -1 || url.indexOf(window.location.host) !== -1) {
-      let contentURL = url.split('#')[0]
-      if (!linkHistories[contentURL]) {
-        iframe.src = contentURL
-        iframe.onload = function () {
-          tooltipContentHtml = ''
-          tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
-          tooltipContentHtml += iframe.contentWindow.document.querySelector('.content').innerHTML
-          tooltipContent.innerHTML = tooltipContentHtml
-          linkHistories[contentURL] = tooltipContentHtml
-          tooltipWrapper.style.display = 'block';
-          tooltipWrapper.scrollTop = 0;
-          setTimeout(function () {
-            tooltipWrapper.style.opacity = 1;
-            if (url.indexOf("#") != -1) {
-              let id = url.split('#')[1];
-              const focus = tooltipWrapper.querySelector(`[id='${id}']`);
-              focus.classList.add('referred');
-              console.log(focus);
-              focus.scrollIntoView({behavior: 'smooth'}, true)
-            } else {
-              tooltipWrapper.scroll(0, 0);
-            }
-          }, 1)
-        }
-      } else {
-        tooltipContent.innerHTML = linkHistories[contentURL]
-        tooltipWrapper.style.display = 'block';
-        setTimeout(function () {
-          tooltipWrapper.style.opacity = 1;
-          if (url.indexOf("#") != -1) {
-              let id = url.split('#')[1];
-              const focus = tooltipWrapper.querySelector(`[id='${id}']`);
-              focus.classList.add('referred');
-              focus.scrollIntoView({behavior: 'smooth'}, true)
-          } else {
-              tooltipWrapper.scroll(0, 0);
-          }
-        }, 1)
-      }
-
-      function getInnerWidth(elem) {
-        var style = window.getComputedStyle(elem);
-        return elem.offsetWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight) - parseFloat(style.borderLeft) - parseFloat(style.borderRight) - parseFloat(style.marginLeft) - parseFloat(style.marginRight);
-      }
-
-      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
-
-      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
-        tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
-      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
-        tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
-      }
-
-      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
-        tooltipWrapper.style.left = "10px";
-      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
-        tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
-      }
-    }
-  }
-
-  function setupListeners(linkElement) {
-    linkElement.addEventListener('mouseleave', function (_event) {
-      hideTooltip();
-    });
-
-    tooltipWrapper.addEventListener('mouseleave', function (_event) {
-      hideTooltip();
-    });
-
-    linkElement.addEventListener('mouseenter', function (event) {
-      clearTimeout(opacityTimeout);
-      clearTimeout(contentTimeout);
-      showTooltip(event);
-    });
-
-    tooltipWrapper.addEventListener('mouseenter', function (event) {
-      clearTimeout(opacityTimeout);
-      clearTimeout(contentTimeout);
-    });
-  }
-
-  window.addEventListener("load", function(event) 
-  {
-    document.querySelectorAll('.internal-link').forEach(setupListeners);
-    document.querySelectorAll('.backlink-card a').forEach(setupListeners);
-  });
-</script>
-
-    
-        <script>
-      if (window.location.hash) {
-        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
-      }
-      window.addEventListener('hashchange', (evt) => {
-        const oldParts = evt.oldURL.split("#");
-        if (oldParts[1]) {
-          document.getElementById(oldParts[1]).classList.remove('referred');
-        }
-        const newParts = evt.newURL.split("#");
-        if (newParts[1]) {
-          document.getElementById(newParts[1]).classList.add('referred');
-        }
-      }, false);
-      const url_parts = window.location.href.split("#")
-      const url = url_parts[0];
-      const referrence = url_parts[1];
-      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
-        el.ondblclick = function(evt) {
-          const ref_url = url + '#' + evt.target.id
-          navigator.clipboard.writeText(ref_url);
-      }
-      });
-
-      
-    </script>
-    <script src=" https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js "></script>
-<script defer>
-    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
-    document.querySelectorAll('.human-date').forEach(function (el) {
-        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
-      });
-</script>
-    
-    
-    <script>
-lucide.createIcons({
-            attrs: {
-                class: ["svg-icon"]
-            }
-        });
-</script>
-  </body>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout(function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout(function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"},transitionDurationMs+1)},transitionDurationMs)}function showTooltip(t){var e=t.target,e=e.getClientRects()[e.getClientRects().length-1],o=window.pageYOffset||document.documentElement.scrollTop,i=t.target.getAttribute("href");if(-1===i.indexOf("http")||-1!==i.indexOf(window.location.host)){let t=i.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout(function(){var t;-(tooltipWrapper.style.opacity=1)!=i.indexOf("#")?(t=i.split("#")[1],(t=tooltipWrapper.querySelector(`[id='${t}']`)).classList.add("referred"),t.scrollIntoView({behavior:"smooth"},!0)):tooltipWrapper.scroll(0,0)},1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml=(tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>")+iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout(function(){var t;-(tooltipWrapper.style.opacity=1)!=i.indexOf("#")?(t=i.split("#")[1],(t=tooltipWrapper.querySelector(`[id='${t}']`)).classList.add("referred"),console.log(t),t.scrollIntoView({behavior:"smooth"},!0)):tooltipWrapper.scroll(0,0)},1)}),tooltipWrapper.style.left=e.left-tooltipWrapper.offsetWidth/2+e.width/2+"px",window.innerHeight-e.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=e.top+o-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-e.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=e.top+o+35+"px"),e.left+e.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-e.left-e.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",function(t){hideTooltip()}),tooltipWrapper.addEventListener("mouseleave",function(t){hideTooltip()}),t.addEventListener("mouseenter",function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)}),tooltipWrapper.addEventListener("mouseenter",function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)})}window.addEventListener("load",function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)})</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",e=>{var t=e.oldURL.split("#"),t=(t[1]&&document.getElementById(t[1]).classList.remove("referred"),e.newURL.split("#"));t[1]&&document.getElementById(t[1]).classList.add("referred")},!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function(e){e.ondblclick=function(e){e=url+"#"+e.target.id;navigator.clipboard.writeText(e)}})</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach(function(e){date=e.getAttribute("data-date")||e.innerText,null!=(parsed_date=null!=(parsed_date=luxon.DateTime.fromISO(date)).invalid?luxon.DateTime.fromSQL(date):parsed_date).invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)})</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
 </html>
