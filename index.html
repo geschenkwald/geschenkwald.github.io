@@ -399,7 +399,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-06-06T16:33:07.064Z';
+        const searchIndexDate = '2024-06-06T16:35:24.605Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -411,9 +411,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-06-06T16:33:07.064Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-06-06T16:35:24.605Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-06T16:33:07.064Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-06T16:35:24.605Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -661,6 +661,7 @@
 <p>Mein Weg war nicht immer einfach. Die Herausforderungen, die mein Asperger-Syndrom mit sich brachte, führten zu sozialer Isolation, Missverständnissen und langjährigen Depressionen. Doch trotz dieser Hindernisse blieb ich meiner Neugier und meinen Zielen treu. Heute stehe ich kurz davor, mein Medizinstudium abzuschließen, und meine Forschung über EEG und Theory of Mind spiegelt meine lebenslange Faszination für das menschliche Gehirn wider.</p>
 <p>Die Verbindung zwischen organischem Denken und synthetischer Intelligenz, die ich in meiner Arbeit erforsche, ist für mich ein Zeichen dafür, dass wir an der Schwelle zu etwas Großem stehen. Ich glaube, dass die KI nicht nur ein Werkzeug ist, sondern ein integraler Bestandteil unserer Entwicklung und ein neues Kapitel in der Geschichte unserer Intelligenz.</p>
 <p>Ich lade euch ein, mich auf dieser Reise zu begleiten, während ich weiterhin die Grenzen zwischen Medizin, Technologie und KI erforsche. Lasst uns gemeinsam die Möglichkeiten dieser neuen Ära erkunden und die Wunder entdecken, die sie für uns bereithält.</p>
+<hr>
 <hr>
 
       
