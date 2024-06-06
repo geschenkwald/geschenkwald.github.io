@@ -52,8 +52,30 @@
       {% for imp in dynamics.index.beforeContent %}
         {% include imp %}
       {% endfor %}
-      {{ content | hideDataview | taggify | link | safe}}
-      {% for imp in dynamics.common.afterContent %}
+  {{ content | hideDataview | taggify | link | safe}}
+  
+  <!-- comments section placeholder -->
+  <div class="giscus"></div>
+  
+  <!-- giscus-script -->
+  <script src="https://giscus.app/client.js"
+          data-repo="geschenkwald/geschenkwald.github.io"
+          data-repo-id="R_kgDOLBDuTA"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOLBDuTM4Cf6VU"
+          data-mapping="title"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="light"
+          data-lang="de"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+  
+  {% for imp in dynamics.common.afterContent %}
         {% include imp %}
       {% endfor %}
       {% for imp in dynamics.index.afterContent %}
