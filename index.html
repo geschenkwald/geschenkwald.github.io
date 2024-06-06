@@ -94,7 +94,7 @@
         <span style="font-size: 1.5rem; margin-right: 10px;" @click="showFilesMobile=!showFilesMobile"><i  icon-name="menu"></i></span>
         
         <a href="/" style="text-decoration: none;">
-            <h1 style="margin: 15px !important;">Digital Garden</h1>
+            <h1 style="margin: 15px !important;">Yazan&#39;s Blog</h1>
         </a>
         
     </div>
@@ -120,7 +120,7 @@
       <nav class="filetree-sidebar"  x-show.important="isDesktop || showFilesMobile" style="display: none;">
         
          <a href="/" style="text-decoration: none;">
-               <h1 style="text-align:center;">Digital Garden</h1>
+               <h1 style="text-align:center;">Yazan&#39;s Blog</h1>
          </a>
          
         
@@ -399,7 +399,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-06-06T17:54:23.691Z';
+        const searchIndexDate = '2024-06-06T17:55:14.474Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -411,9 +411,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-06-06T17:54:23.691Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-06-06T17:55:14.474Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-06T17:54:23.691Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-06T17:55:14.474Z', docs}));
             window.docs = docs
             window.index = index;
         }
